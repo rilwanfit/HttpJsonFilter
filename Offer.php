@@ -22,4 +22,9 @@ final class Offer implements OfferInterface
     {
         return $this->vendorId;
     }
+
+    public function getProductTitle(): string
+    {
+        return $this->productTitle;
+    }
 }

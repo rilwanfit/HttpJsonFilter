@@ -16,6 +16,9 @@ $subcommand2FilterMapping = [
     'count_by_vendor_id' => function(Iterator $productIterator, array $argv) {
         return new VendorIdFilterIterator($productIterator, intval($argv[2]));
     },
+    'count_by_title_prefix' => function(Iterator $productIterator, array $argv) {
+        return new ProductTitlePrefixFilterIterator($productIterator,$argv[2]);
+    },
 ];
 
 echo iterator_count($subcommand2FilterMapping[$argv[1]]($productIterator, $argv));

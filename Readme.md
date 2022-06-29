@@ -48,3 +48,7 @@ OFFERS_ENDPOINT=http://localhost:8007 php app.php count_by_vendor_id 35
 ```
 OFFERS_ENDPOINT=http://localhost:8007 php app.php count_by_price_range 5 20
 ```
+
+```
+OFFERS_ENDPOINT=http://localhost:8007 php app.php count_by_title_prefix Cha
+```

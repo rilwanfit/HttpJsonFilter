@@ -8,4 +8,6 @@ interface OfferInterface
     public function getPrice(): float;
 
     public function getVendorId(): int;
+
+    public function getProductTitle(): string;
 }
